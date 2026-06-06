@@ -1,6 +1,6 @@
 import { z } from "zod"
 
-const userValidationSchema = z.object({
+const registerValidationSchema = z.object({
   firstName: z.string().trim().min(2, "First name is required"),
   lastName: z.string().trim().min(2, "Last name is required"),
   email: z.string().email("Invalid email format"),
@@ -12,6 +12,6 @@ const loginValidationSchema = z.object({
   password: z.string().min(1, "Password is required"),
 })
 
-const partialUserSchema = userValidationSchema.partial()
+const partialRegisterSchema = registerValidationSchema.partial()
 
-export { userValidationSchema, loginValidationSchema, partialUserSchema }
+export { registerValidationSchema, loginValidationSchema, partialRegisterSchema }
