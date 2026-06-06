@@ -24,8 +24,7 @@ const createTask = async (req: AuthRequest, res: Response) => {
 const updateTask = async (req: AuthRequest, res: Response) => {
   try {
     const { id } = req.params
-    const { title, description, isCompleted } = req.body
-    const updatedTask = await Task.findByIdAndUpdate(id, { title, description }, { new: true })
+    const updatedTask = await Task.findByIdAndUpdate(id, req.body, { new: true })
     return res.status(200).json({ success: true, message: "Task updated successfully", data: updatedTask })
   } catch (error) {
     return res.status(500).json({ success: false, message: "Internal server error", error: error })

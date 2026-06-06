@@ -8,7 +8,7 @@ http:
   url: http://localhost:3000/api/tasks
   headers:
     - name: Authorization
-      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2YTIzOWZkN2UxODQ0YjkxMDdkZmEwZTgiLCJmaXJzdE5hbWUiOiJKdWFuIiwibGFzdE5hbWUiOiJQZXJleiIsImVtYWlsIjoianVhbi5wZXJlekBlamVtcGxvLmNvbSIsImlhdCI6MTc4MDcyMDgxMCwiZXhwIjoxNzgwNzIxNzEwfQ.iCqf9DU6GFwNUWnkbWuIeZnC49pCNzH0KS-KHemumrw
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2YTIzOWZkN2UxODQ0YjkxMDdkZmEwZTgiLCJmaXJzdE5hbWUiOiJKdWFuIiwibGFzdE5hbWUiOiJQZXJleiIsImVtYWlsIjoianVhbi5wZXJlekBlamVtcGxvLmNvbSIsImlhdCI6MTc4MDcyMjg5MSwiZXhwIjoxNzgwNzIzNzkxfQ.3PwFYq5ETbrbnnrLssdGJgbwp9oIkocb6kiKN_AgS8o
   auth: inherit
 
 settings:

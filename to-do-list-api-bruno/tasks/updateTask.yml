@@ -8,12 +8,13 @@ http:
   url: http://localhost:3000/api/tasks/6a23a509aaf8917c2c366546
   headers:
     - name: Authorization
-      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2YTIzOWZkN2UxODQ0YjkxMDdkZmEwZTgiLCJmaXJzdE5hbWUiOiJKdWFuIiwibGFzdE5hbWUiOiJQZXJleiIsImVtYWlsIjoianVhbi5wZXJlekBlamVtcGxvLmNvbSIsImlhdCI6MTc4MDcyMDgxMCwiZXhwIjoxNzgwNzIxNzEwfQ.iCqf9DU6GFwNUWnkbWuIeZnC49pCNzH0KS-KHemumrw
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2YTIzOWZkN2UxODQ0YjkxMDdkZmEwZTgiLCJmaXJzdE5hbWUiOiJKdWFuIiwibGFzdE5hbWUiOiJQZXJleiIsImVtYWlsIjoianVhbi5wZXJlekBlamVtcGxvLmNvbSIsImlhdCI6MTc4MDcyMTk4MywiZXhwIjoxNzgwNzIyODgzfQ.qvO4_vW31kjvRKqgnOlFnIVzNWET0Q8SI8CyLi9VlvI
   body:
     type: json
     data: |-
       {
-        "title": "Aprender más TypeScript 2"
+        "title": "tres caracteres",
+        "isCompleted": true
       }
   auth: inherit
 
