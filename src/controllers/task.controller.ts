@@ -21,4 +21,25 @@ const createTask = async (req: AuthRequest, res: Response) => {
   }
 }
 
-export { getTasks, createTask }
+const updateTask = async (req: AuthRequest, res: Response) => {
+  try {
+    const { id } = req.params
+    const { title, description, isCompleted } = req.body
+    const updatedTask = await Task.findByIdAndUpdate(id, { title, description }, { new: true })
+    return res.status(200).json({ success: true, message: "Task updated successfully", data: updatedTask })
+  } catch (error) {
+    return res.status(500).json({ success: false, message: "Internal server error", error: error })
+  }
+}
+
+const deleteTask = async (req: AuthRequest, res: Response) => {
+  try {
+    const { id } = req.params
+    await Task.findByIdAndDelete(id)
+    return res.status(200).json({ success: true, message: "Task deleted successfully" })
+  } catch (error) {
+    return res.status(500).json({ success: false, message: "Internal server error", error: error })
+  }
+}
+
+export { getTasks, createTask, updateTask, deleteTask }
