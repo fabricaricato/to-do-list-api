@@ -1,0 +1,25 @@
+info:
+  name: createTask
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:3000/api/tasks
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2YTIzOWZkN2UxODQ0YjkxMDdkZmEwZTgiLCJmaXJzdE5hbWUiOiJKdWFuIiwibGFzdE5hbWUiOiJQZXJleiIsImVtYWlsIjoianVhbi5wZXJlekBlamVtcGxvLmNvbSIsImlhdCI6MTc4MDcxOTk0NCwiZXhwIjoxNzgwNzIwODQ0fQ.Ix8WhTvklxQ6Au0KTQOuHuejWhWvo39mm785_jKPY3c
+  body:
+    type: json
+    data: |-
+      {
+        "title": "Aprender más TypeScript",
+        "description": "Practicar middlewares y tipado avanzado"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
